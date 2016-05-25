@@ -30,10 +30,9 @@ void loop() {
       if (charNum - offset == rowNum * lcdCols && charNum < dataLength-offset && text[charNum] == ' ') {
         charNum++;
         offset++;
-      //  dataLength--;
       }
-      //if (charNum - offset >= dataLength-offset) lcd.write(254);
-      if (charNum-offset >= dataLength-offset) lcd.print("x");
+      if (charNum - offset >= dataLength-offset) lcd.write(254);
+      //if (charNum-offset >= dataLength-offset) lcd.print("x");
       else if (charNum - offset < dataLength-offset)lcd.print(text[charNum]);
       charNum++;
     }
