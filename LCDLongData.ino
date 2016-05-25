@@ -1,5 +1,6 @@
 /*
    Long data on a 20x4 LCD by Ben Lipsey www.varind.com 2016. This code is public domain, enjoy!
+   https://github.com/varind/LCDLongData
 */
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(8, 7, 6, 5, 4, 3);
